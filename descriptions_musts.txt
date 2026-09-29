@@ -1,0 +1,60 @@
+Informações do dataset
+
+Previsão do tipo de cobertura florestal a partir de variáveis ​​cartográficas 
+apenas (sem dados de sensoriamento remoto). O tipo de cobertura florestal real 
+para uma determinada observação (célula de 30 x 30 metros) foi determinado a 
+partir de dados do Sistema de Informação de Recursos (RIS) da Região 2 do 
+Serviço Florestal dos EUA (USFS). As variáveis ​​independentes foram derivadas de 
+dados originalmente obtidos do Serviço Geológico dos EUA (USGS) e do USFS. 
+Os dados estão em formato bruto (não escalonados) e contêm colunas 
+binárias (0 ou 1) para variáveis ​​independentes qualitativas (áreas de 
+preservação ambiental e tipos de solo).
+
+Esta área de estudo inclui quatro áreas de preservação ambiental localizadas na 
+Floresta Nacional Roosevelt, no norte do Colorado. Essas áreas representam 
+florestas com mínimas perturbações causadas pelo homem, de modo que os tipos de 
+cobertura florestal existentes são mais resultado de processos ecológicos do 
+que de práticas de manejo florestal.
+
+Algumas informações básicas sobre essas quatro áreas de preservação ambiental: 
+Neota (área 2) provavelmente tem o maior valor médio de altitude entre as 
+quatro áreas. Rawah (área 1) e Comanche Peak (área 3) teriam um valor médio 
+de altitude mais baixo, enquanto Cache la Poudre (área 4) teria o valor médio 
+de altitude mais baixo.
+
+Quanto às principais espécies arbóreas nessas áreas, Neota teria abeto/pinheiro 
+(tipo 1), enquanto Rawah e Comanche Peak provavelmente teriam 
+pinheiro-de-lodgepole (tipo 2) como espécie principal, seguido por 
+abeto/pinheiro e álamo (tipo 5). Cache la Poudre tenderia a ter 
+pinheiro-ponderosa (tipo 3), abeto-de-Douglas (tipo 6) e 
+choupo/salgueiro (tipo 4).
+
+As áreas de Rawah e Comanche Peak tenderiam a ser mais representativas do 
+conjunto de dados geral do que Neota ou Cache la Poudre, devido à sua 
+variedade de espécies arbóreas e à amplitude dos valores das variáveis ​
+​preditivas (altitude, etc.). Cache la Poudre provavelmente seria mais 
+singular do que as outras, devido à sua amplitude altitudinal relativamente 
+baixa e à sua composição de espécies.
+
+#---###---#
+
+O que deve conter no arquivo final
+
+- Breve descrição das caracteristicas e classes para o classificador;
+- Análise exploratória dos dados;
+- Modelo de classificação;
+- Ilustrar a matriz de confusão;
+- Métricas de precisão, revocação, f1-score e acurácia para o modelo.
+
+#---###---#
+
+Modelos de classificação
+
+• Regressão logística;
+• Árvore de decisão;
+• Naive Bayes;
+• Rede neural;
+    • Perceptron simples (limitado a dados de caracteristicas lineares);
+    • MLP (Multi Line Perceptron). Necessário definir a rede, como neuronios, camadas ocultas;
+    • Ter ao menos uma camada oculta e cada camada oculta ter ao menos 3 neurônios
+• KNN.
